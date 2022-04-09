@@ -1,1 +1,1 @@
-![exercicio](https://user-images.githubusercontent.com/98776872/162557892-ac9dda6b-7a3b-404b-b8b5-73cec92a0712.gif)
+![ex](https://user-images.githubusercontent.com/98776872/162558426-7dd9ba05-fcb4-4412-9fbc-d84037dc3277.gif)
