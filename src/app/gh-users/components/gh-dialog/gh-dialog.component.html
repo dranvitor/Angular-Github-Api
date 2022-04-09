@@ -1,0 +1,70 @@
+<div class="container">
+  <h2 mat-dialog-title> Dados de {{ username }}</h2>
+  
+  <div class="col">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <a [href]="user?.html_url" target="blank">
+          {{ user?.name }}
+        </a>
+      </mat-card-title>
+    </mat-card-header>
+      <mat-card-content>
+        <img [src]="user?.avatar_url">
+      </mat-card-content>
+  
+      <mat-card-content>
+        {{user?.bio}}
+        </mat-card-content>
+  
+      <mat-card-content> Localização:
+        {{user?.location}}
+      </mat-card-content>
+  
+      <mat-card-content>
+        Seguidores:
+        {{user?.followers}}
+      </mat-card-content> 
+  
+      <mat-card-content>
+        Seguindo:
+      {{user?.following}}
+      </mat-card-content>
+  </mat-card>
+  </div>
+  
+  <div class="col" *ngFor="let r of  repository">
+  
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <a [href]="r.html_url" target="blank">
+            {{ r.name }}
+          </a>
+        </mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+          Linguagem:
+          {{ r.language }}
+        </mat-card-content>
+  
+        <mat-card-content>
+          Descrição:
+          {{ r.description }}
+          </mat-card-content>
+    
+        <mat-card-content>
+          Estrelas:
+          {{ r.stargazers_count }}
+          </mat-card-content>
+  
+          <mat-card-content>
+            Forks:
+            {{ r.forks }}
+            </mat-card-content>
+    </mat-card>
+  </div>
+  
+  </div>
+  
