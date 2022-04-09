@@ -1,0 +1,22 @@
+.uname {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-height: 600px;
+    max-width: 500px;
+    overflow-y: auto;
+    align-items: center;
+   }
+
+   .mat-card{
+    background: url(https://w0.peakpx.com/wallpaper/849/685/HD-wallpaper-abstract-white-abstract-android-beautiful-best-design-good-iphone-white.jpg);
+   }
+
+   .cname {
+       color: black;
+   }
+
+
+
