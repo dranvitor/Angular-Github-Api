@@ -3,7 +3,7 @@
 <mat-card>
 <div class="card1">
 <mat-card-header>
-    <mat-card-title >
+    <mat-card-title>
       <a class="uname" [href]="user?.html_url" target="blank">
         {{ user?.name }}
       </a>
@@ -12,29 +12,25 @@
     <mat-card-content>
       <img [src]="user?.avatar_url">
     </mat-card-content>
-
     <mat-card-content>
       {{user?.bio}}
       </mat-card-content>
-
     <mat-card-content> Localização:
       {{user?.location}}
     </mat-card-content>
-
     <mat-card-content>
       Seguidores:
       {{user?.followers}}
     </mat-card-content> 
-
     <mat-card-content>
       Seguindo:
     {{user?.following}}
     </mat-card-content>
 </div>
-
 <mat-divider></mat-divider>
-<div class="card2" *ngFor="let r of  repository">
 
+<h2 mat-dialog-title> Repositórios de {{ username }} </h2>
+<div class="card2" *ngFor="let r of repository">
   <mat-grid-list cols="2" rowHeight="2:1">
     <mat-grid-tile > <a class="cname" [href]="r.html_url" target="blank"> 
      Nome: {{ r.name }}
@@ -45,9 +41,7 @@
         {{ r.forks }} </mat-grid-tile>
     <mat-grid-tile> Estrelas:
       {{ r.stargazers_count }}</mat-grid-tile>
-
   </mat-grid-list>
   <mat-divider></mat-divider>
-
 </div>
 </mat-card>
